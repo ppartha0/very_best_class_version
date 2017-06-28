@@ -50,8 +50,6 @@ class FavoritesController < ApplicationController
 
   def update
     @favorite = Favorite.find(params[:id])
-
-    @favorite.user_id = params[:user_id]
     @favorite.venue_id = params[:venue_id]
     @favorite.my_dish_id = params[:my_dish_id]
     @favorite.dish_id = params[:dish_id]
